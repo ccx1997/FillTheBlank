@@ -8,4 +8,4 @@ Command:
 Output:
 `('网', 0.403095006942749)  ('联', 0.15400202572345734)  ('交', 0.14229977130889893)`
 
-The pretrained parameter file is at [Baidu Netdisk](https://pan.baidu.com/s/1IrPHcOmc30m9WuMRv2Veow).
+The pretrained parameter file is at [Baidu Netdisk](https://pan.baidu.com/s/1IrPHcOmc30m9WuMRv2Veow). You can download it and put it in directory `param/`.
