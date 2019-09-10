@@ -22,9 +22,10 @@ def one_pass(opt):
     sequence = getdata.wrap_a_word(opt.word, alphabet)
     sequence.unsqueeze_(0)
     sequence = sequence.to(device)
+    idx = torch.tensor([opt.word.index('?')]).to(device)
     # forward
     with torch.no_grad():
-        score = net(sequence)
+        score = net(sequence, idx)
     prob = torch.nn.functional.softmax(score, dim=1)
     # Show the top5-likelihood candidate characters
     v5, i5 = prob[0].topk(10)
